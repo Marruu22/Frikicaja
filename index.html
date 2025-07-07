@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frikicaja - Cajas sorpresa</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.google.com/specimen/Anton?query=anton+" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="#">
+        <img src="img/logo-frikicaja.jpg" alt="Frikicaja" style="height: 40px;">
+    </a>    
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#instrucciones">Instrucciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#suscripciones">Suscripciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#geekswap">GeekSwap</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Q&A">Q&A</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+<section class="section-spacing container d-flex align-items-center justify-content-between" style="min-height: 100vh; padding-top: 100px;" id="inicio">
+  <div class="row align-items-center">
+    <!-- Texto principal -->
+    <div class="col-lg-6">
+      <h1 class="h1-custom">Tu universo geek en una caja</h1>
+      <p class="p-custom">Figuras de colección, cómics de edición 
+especial, pines legendarios y más.
+¡Todo el multiverso en una caja!</p>
+      <div class="d-flex gap-3 mt-4">
+        <a href="#suscripciones" class="btn btn-dark">Conocer planes</a>
+      </div>
+    </div>
+    <!-- Imagen destacada -->
+    <div class="col-lg-6 text-center">
+      <img src="img/hero.png" class="img-fluid img-rounded" alt="Imagen Hero">
+    </div>
+    <div>
+      <img src="img/logos.jpg" alt="Frikicaja" style="position: center;">
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+<!-- ABOUT: Sección ediciones -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Ediciones</h2>
+  <p class="mb-5">Las cajas están repletas de los siguientes mundos</p>
+  <div class="row">
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/marvel.jpg" class="mb-3" alt="Servicio">
+        <h5>Multiverso</h5>
+        <p class="p-custom">Marvel y DC colisionan. Solo quienes se atrevan al caos podrán descubrir aquellas piezas épicas de ambos mundos. </p>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/anime.jpg" class="mb-3" alt="Servicio">
+        <h5>Anime Legends</h5>
+        <p class="p-custom">Directo desde Japón, personajes de culto y héroes de shonen.
+¡Tu dosis de energía otaku en cada caja!</p>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/starwars.jpg" class="mb-3" alt="Servicio">
+        <h5>Star Wars</h5>
+        <p class="p-custom">Una galaxia lejana, una caja cercana. Figuras, artefactos y tesoros de la saga que lo cambió todo. Que la fuerza te acompañe al abrirla.</p>
+      </div>
+    </div>
+        <div class="col-md-3 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/arcade.jpg" class="mb-3" alt="Servicio">
+        <h5>Arcade total</h5>
+        <p class="p-custom">Viaje retro al corazón gamer. De los 8 bits a los legendarios arcades. Perfecta para quienes crecieron en fichines</p>
+      </div>
+    </div>
+    <!-- ... repetir estructura para más servicios ... -->
+  </div>
+</section>
+<!-- /ABOUT -->
+
+
+<!-- Còmo funciona -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom" id="instrucciones">Instrucciones de juego</h2>
+  <div class="row">
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/instrucciones1.jpg" class="mb-3" alt="Servicio">
+        <h5>Explorá el multiverso geek</h5>
+        <p class="p-custom">Sumergite en mundos de ciencia ficción, anime, retro y más.</p>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/instrucciones2.jpg" class="mb-3" alt="Servicio">
+        <h5>Elegí tu caja secreta</h5>
+        <p class="p-custom">Cada mes, una nueva misión sorpresa.</p>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/instrucciones3.jpg" class="mb-3" alt="Servicio">
+        <h5>Desbloqueá reliquias legendarias</h5>
+        <p class="p-custom">Abrí tu caja y descubrí el loot.</p>
+      </div>
+    </div>
+    <!-- ... repetir estructura para más servicios ... -->
+  </div>
+</section>
+<!-- /SERVICES -->
+
+<!-- Texto centrado sin imagen -->
+<section class="section-spacing container text-center">
+  <h2 class="display-5" class="h2-custom">Cada caja es un loot épico.
+Cada fan, parte de la leyenda.</h2>
+</section>
+
+
+
+<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+<section class="section-spacing container text-center" id="suscripciones">
+  <h2 class="h2-custom">Planes de Suscripción</h2>
+  <p class="p-custom">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
+  
+  <div class="row mt-5">
+    
+    <!-- Card: Plan Básico -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100">
+        <!-- Título y precio -->
+        <img src="img/suscripcionbarata.jpg" class="img-fluid img-rounded my-3" alt="Plan Básico">
+        <h5 class="text-uppercase">Plan Sidekick</h5>
+        <p class="display-6 text-primary">$49.000 <small>/ mes</small></p>
+
+        <!-- Descripción -->
+        <p class="p-custom">Perfecto para empezar.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ 1 figura sorpresa</li>
+          <li>✔ Pin o parche exclusivo</li>
+          <li>✔ 1 carta coleccionable</li>
+          <li>¡Y más!</li>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="plan.html" class="btn btn-primary mt-3">Elegir plan</a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Pro (Recomendado) -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100 border border-primary">
+        <!-- Título y precio -->
+        <img src="img/suscripcioncara.jpg" class="img-fluid img-rounded my-3" alt="Plan Básico">
+        <h5 class="text-uppercase">Plan Pro <span class="badge bg-primary ms-2">Recomendado</span></h5>
+        <p class="display-6 text-primary">$60.000 <small>/ mes</small></p>
+        
+        <!-- Descripción -->
+        <p class="p-custom">Ideal para quienes buscan más.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ Figura de edición limitada o exclusiva </li>
+          <li>✔ Cómic con portada variante</li>
+          <li>✔ 2 Ítems premium</li>
+          <li>¡Y mucho más!</li>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="plan.html" class="btn btn-primary mt-3">Elegir plan</a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Full -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100">
+        <!-- Título y precio -->
+        <img src="img/suscripcionmedia.jpg" class="img-fluid img-rounded my-3" alt="Plan Básico">
+        <h5 class="text-uppercase">Plan Heroe</h5>
+        <p class="display-6 text-primary">$55.000 <small>/ mes</small></p>
+        
+        <!-- Descripción -->
+        <p class="p-custom">La experiencia completa.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ Figura de edición limitada</li>
+          <li>✔ Loot sorpresa</li>
+          <li>✔ Acceso a contenido exclusivo</li>
+          <li>¡Y más!</li>
+        </ul>
+
+
+        <!-- Botón CTA -->
+        <a href="plan.html" class="btn btn-primary mt-3">Elegir plan</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /PLANES DE SUSCRIPCIÓN -->
+
+<section class="section-spacing container text-center" id="geekswap">
+  <h2 class="h2-custom">GeekSwap</h2>
+  <p class="mb-5">¿Tenés figuras repetidas? Intercambialas con otros suscriptores. GeekSwap es nuestra comunidad secreta 
+de coleccionistas. Acá nadie se queda con la misma carta dos veces.</p>
+        <a href="#suscripciones" class="btn btn-primary mt-3">Suscribirme</a>
+  <div class="row">
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/geekswap1.jpg" class="mb-3" alt="Servicio">
+        <h5>Figura de anime</h5>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/geekswap2.jpg" class="mb-3" alt="Servicio">
+        <h5>Comic spiderman tapa dura</h5>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/geekswap3.jpg" class="mb-3" alt="Servicio">
+        <h5>Jujutsu caisen anime, 
+poster</h5>
+      </div>
+    </div>
+        <div class="col-md-3 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/geekswap4.jpg" class="mb-3" alt="Servicio">
+      </div>
+    </div>
+    <!-- ... repetir estructura para más servicios ... -->
+  </div>
+</section>
+
+
+<!-- Opiniones -->
+<section class="section-spacing container py-5 text-center">
+  <h2 class="mb-4" class="h2-custom">Opiniones</h2>
+  <p class="mb-5">Conoce lo que dicen los demás jugadores</p>
+  <div class="row g-4">
+    <div class="col-md-4"><img src="img/opinion1.png" class="img-fluid img-rounded rounded" alt="Opinion 1"></div>
+    <div class="col-md-4"><img src="img/opinion2.png" class="img-fluid img-rounded rounded" alt="Opinion 2"></div>
+    <div class="col-md-4"><img src="img/opinion3.png" class="img-fluid img-rounded rounded" alt="Opinion 3"></div>
+  </div>
+</section>
+
+
+
+<!-- FAQS: Preguntas frecuentes -->
+<section class="section-spacing container text-center" id="Q&A">
+  <h2 class="h2-custom">Preguntas Frecuentes</h2>
+  <p class="p-custom">Respuestas a dudas comunes.</p>
+  <div class="accordion mt-5" id="faqAccordion">
+    <!-- Ítem de pregunta -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+      ¿Qué es Frikicaja?
+    </button>
+  </h2>
+  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+          Frikicaja es una suscripción mensual que te entrega una caja sorpresa repleta de artículos exclusivos del universo geek. Figuras de colección, cómics con portadas variantes, pines legendarios, ítems retro y mucho más.
+Cada caja está cuidadosamente curada para fans de Marvel, anime, videojuegos, Star Wars, Harry Potter, y otros mundos épicos.
+No sabés qué te va a tocar, pero sí sabés que va a ser increíble. Es como abrir un loot box… ¡pero en la vida real!
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingTwo">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+      ¿Puedo elegir el contenido de mi caja?
+    </button>
+  </h2>
+  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+No, los contenidos de las cajas son aleatorios. Si tenes miedo de
+que te toquen items repetidos, podes encontrar la sección de
+“GeekSwap” para intercambiarlos.     
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingThree">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+      ¿Qué pasa si ya tengo un item repetido?
+    </button>
+  </h2>
+  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+          Para ello existe la comunidad GeekSwap, a la que podrás acceder cuando te suscribas. En ella vas a poder intercambiar ítems con otros usuarios
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingFour">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+      ¿Hacen envíos internacionales?
+    </button>
+  </h2>
+  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+        Si, solo tené en cuenta que depende de donde vivas puede tardar un poco más en llegarte el paquete.
+    </div>
+  </div>
+</div>
+
+
+<!-- CONTACT FORM: Formulario de contacto -->
+<section class="section-spacing container text-center" id="contacto">
+  <h2 class="h2-custom">Contacto</h2>
+  <p class="p-custom">Envía un mensaje directamente desde la web.</p>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Tu email">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+      </form>
+    </div>
+
+      <!-- Imagen -->
+    <div class="col-lg-6 text-center">
+      <img src="img/contacto.png" class="img-fluid img-rounded" alt="Imagen contacto">
+    </div>
+</div>
+</section>
+<!-- /CONTACT FORM -->
+
+
+<footer class="footer bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Columna 1 -->
+      <div class="col-md-4 mb-4">
+        <img src="img/logo-frikicaja.jpg" alt="Logo" class="mb-3">
+        <h5>Seguinos</h5>
+        <img src="img/iconosfooter.jpg" alt="Redes" class="img-fluid">
+        <p class="small mt-3">© 2025 Política de privacidad</p>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="col-md-4 mb-4">
+        <h5>Navegación</h5>
+        <ul class="list-unstyled">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#instrucciones">Instrucciones</a></li>
+          <li><a href="#suscripciones">Suscripciones</a></li>
+          <li><a href="#geekswap">GeekSwap</a></li>
+          <li><a href="#Q&A">Q&A</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <!-- y así... -->
+        </ul>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="col-md-4">
+        <h5>Newsletter</h5>
+        <p>Recibí noticias pixeladas y más.</p>
+        <form class="d-flex">
+          <input type="email" class="form-control me-2" placeholder="Correo...">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- /FOOTER -->
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+</body>
+</html>
