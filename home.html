@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frikicaja - Cajas sorpresa</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+2:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<header class="navbar">
+  <div class="navbar-container">
+    <img src="img/logofrikicaja.png" class="logo">
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="#instrucciones">Instrucciones</a></li>
+        <li><a href="#suscripciones">Suscripciones</a></li>
+        <li><a href="#Q&A">Q&A</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Esto lo movés fuera del contenedor -->
+  <button class="hamburger" id="hamburger-toggle">☰</button>
+  <nav class="dropdown-menu" id="dropdown">
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="#loot">Loot</a></li>
+        <li><a href="#instrucciones">Instrucciones</a></li>
+        <li><a href="#suscripciones">Suscripciones</a></li>
+        <li><a href="#geekswap">GeekSwap</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#Q&A">Q&A</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+</header>
+<!-- /NAVBAR -->
+
+
+<section class="hero-section" id="inicio">
+  <div class="hero-container">
+    <!-- Texto -->
+    <div class="hero-text">
+      <h1 class="h1-custom">Tu universo geek en una caja</h1>
+      <p class="p-custom">
+        Figuras de colección, cómics de edición especial, pines legendarios y más.<br>
+        ¡Todo el multiverso en una caja!
+      </p>
+      <a href="#suscripciones" class="hero-btn">Conocer planes</a>
+    </div>
+
+    <!-- Imagen -->
+    <div class="hero-img">
+      <img src="imghero.png">
+    </div>
+  </div>
+</section>
+
+
+
+<section class="imagen-corte">
+  <img src="img/logos.jpg" alt="logos marcas">
+</section>
+
+<!-- ABOUT: Sección ediciones -->
+<section id="loot" class="mundos-section">
+  <h2 class="titulo-seccion">Mundos por lootear</h2>
+<p class="subtitulo-seccion">¡Estas cajas pueden contener cualquiera de estos mundos!</p>
+  <div class="tarjetas-contenedor">
+    <div class="tarjeta">
+      <img src="img/marvel.jpg" alt="Multiverso">
+      <h5>Multiverso</h5>
+      <p>Marvel y DC colisionan. Solo quienes se atrevan al caos podrán descubrir aquellas piezas épicas de ambos mundos.</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="img/anime.jpg" alt="Anime Legends">
+      <h5>Anime Legends</h5>
+      <p>Directo desde Japón, personajes de culto y héroes de shonen. ¡Tu dosis de energía otaku en cada caja!</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="img/starwars.jpg" alt="Star Wars">
+      <h5>Star Wars</h5>
+      <p>Una galaxia lejana, una caja cercana. Figuras, artefactos y tesoros de la saga que lo cambió todo.</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="img/arcade.jpg" alt="Arcade Total">
+      <h5>Arcade total</h5>
+      <p>Viaje retro al corazón gamer. De los 8 bits a los legendarios arcades. Perfecta para quienes crecieron en fichines.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Còmo funciona -->
+<section id="instrucciones" class="instrucciones-section">
+  <h2 class="titulo-instruccion">¿Cómo funciona?</h2>
+
+  <div class="tarjetas-instruccion">
+    <div class="tarjeta1">
+      <img src="img/instrucciones1.jpg" alt="Multiverso">
+      <h5>Explorá el multiverso geek</h5>
+      <p>Sumergite en mundos de ciencia ficción, anime, retro y más.</p>
+    </div>
+
+    <div class="tarjeta1">
+      <img src="img/instrucciones2.jpg" alt="Anime Legends">
+      <h5>Elegí tu caja secreta</h5>
+      <p>Cada mes, una nueva misión sorpresa.</p>
+    </div>
+
+    <div class="tarjeta1">
+      <img src="img/instrucciones3.jpg" alt="Star Wars">
+      <h5>Desbloqueá reliquias legendarias</h5>
+      <p>Abrí tu caja y descubrí el loot épico.</p>
+    </div>
+  </div>
+</section>
+<!-- /SERVICES -->
+
+<!-- Texto centrado sin imagen -->
+<section class="texto-central">
+  <div class="texto-central-contenido">
+    <h2 class="titulo">Cada caja es un loot épico.<br>Cada fan, parte de la leyenda.</h2>
+    <p class="descripcion">
+      Cada entrega es una misión sorpresa, cargada de ítems legendarios, nostalgia y poder geek.<br>
+      No es solo una caja: es tu entrada a un universo donde cada fan colecciona historias.
+    </p>
+  </div>
+</section>
+
+
+<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+<section id="suscripciones" class="suscripciones-seccion">
+  <div class="suscripciones">
+  <h2>Suscripciones</h2>
+  <p class="subtitulo">Elegí tu plan de batalla.<br>
+  Ya seas un explorador casual o un fan legendario, hay una Frikicaja esperando por vos.</p>
+
+  <div class="planes">
+    <!-- Plan Sidekick -->
+    <div class="plan-card">
+      <img src="img/suscripcionbarata.jpg" alt="Plan Sidekick" />
+      <h3>Plan Sidekick</h3>
+      <p class="precio">$49.000 <span>/ mes</span></p>
+      <p>Perfecto para empezar.<br><strong>Incluye:</strong></p>
+      <ul>
+        <li>✔ 1 figura sorpresa</li>
+        <li>✔ Pin o parche exclusivo</li>
+        <li>✔ 1 carta coleccionable</li>
+        <li>¡Y más!</li>
+      </ul>
+      <a href="plan.html" class="btn">Elegir plan</a>
+    </div>
+
+    <!-- Plan Pro -->
+    <div class="plan-card destacado">
+      <img src="img/cajasus3.png" alt="Plan Pro" />
+      <h3>Plan Pro </h3>
+      <p class="precio">$60.000 <span>/ mes</span></p>
+      <p>Ideal para quienes buscan más.<br><strong>Incluye:</strong></p>
+      <ul>
+        <li>✔ Figura de edición limitada o exclusiva</li>
+        <li>✔ Cómic con portada variante</li>
+        <li>✔ 2 ítems premium</li>
+        <li>¡Y mucho más!</li>
+      </ul>
+      <a href="plan.html" class="btn">Elegir plan</a>
+    </div>
+
+      <div class="planes">
+    <!-- Plan Sidekick -->
+    <div class="plan-card">
+      <img src="img/suscripcionmedia.jpg" alt="Plan Sidekick" />
+      <h3>Plan Heroe</h3>
+      <p class="precio">$55.000 <span>/ mes</span></p>
+      <p>Perfecto para empezar.<br><strong>Incluye:</strong></p>
+      <ul>
+        <li>✔ Figura de edición limitada</li>
+          <li>✔ Loot sorpresa</li>
+          <li>✔ Acceso a contenido exclusivo</li>
+          <li>¡Y más!</li>
+      </ul>
+      <a href="plan.html" class="btn">Elegir plan</a>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- /PLANES DE SUSCRIPCIÓN -->
+
+
+<section class="geekswap-section" id="geekswap">
+  <div class="geekswap">
+  <!-- Títulos -->
+  <div class="geekswap-titulos">
+    <h2 class="titulo">GeekSwap</h2>
+    <h4 class="subtitulo">Modo trueque activado</h4>
+  </div>
+
+  <!-- Contenido en dos columnas -->
+  <div class="geekswap-contenido">
+    <!-- Texto -->
+    <div class="geekswap-texto">
+      <h3>¡Canjeá como un verdadero fan!</h3>
+      <p>
+        ¿Tenés ítems repetidos o te falta ese objeto épico para completar tu colección?<br>
+        Con GeekSwap, podés intercambiar figuras, cómics y loot coleccionable con otros jugadores del multiverso Frikicaja.<br>
+        Accedé a la comunidad secreta desde el código de tu caja mensual y preparate para un juego de estrategia geek.<br>
+        Chateá. Cambiá. Completá tu inventario.
+      </p>
+      <a href="#suscripciones" class="boton-dark">Suscribirte</a>
+    </div>
+
+    <!-- Imagen -->
+    <div class="geekswap-img">
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Opiniones -->
+<section class="opiniones-section">
+  <h2 class="opiniones-titulo">Opiniones</h2>
+  <p class="opiniones-subtitulo">Conocé lo que dicen los demás jugadores</p>
+
+  <div class="opiniones-grid">
+    <div class="opinion-item">
+      <img src="img/opinion1.png" alt="Opinión 1">
+    </div>
+    <div class="opinion-item">
+      <img src="img/opinion2.png" alt="Opinión 2">
+    </div>
+    <div class="opinion-item">
+      <img src="img/opinion3.png" alt="Opinión 3">
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- FAQS: Preguntas frecuentes -->
+ <section id="Q&A" class="faq-section">
+  <h2>Preguntas Frecuentes</h2>
+  <p class="subtitulo">Respuestas a dudas comunes.</p>
+
+  <div class="faq-container">
+
+    <!-- Pregunta 1 -->
+    <div class="faq-item">
+      <button class="faq-question">¿Qué es Frikicaja?</button>
+      <div class="faq-answer">
+        <p>Frikicaja es una suscripción mensual que te entrega una caja sorpresa repleta de artículos exclusivos del universo geek. Figuras de colección, cómics con portadas variantes, pines legendarios, ítems retro y mucho más.<br>
+        Cada caja está cuidadosamente curada para fans de Marvel, anime, videojuegos, Star Wars, Harry Potter, y otros mundos épicos.<br>
+        No sabés qué te va a tocar, pero sí sabés que va a ser increíble. Es como abrir un loot box… ¡pero en la vida real!</p>
+      </div>
+    </div>
+
+    <!-- Pregunta 2 -->
+    <div class="faq-item">
+      <button class="faq-question">¿Puedo elegir el contenido de mi caja?</button>
+      <div class="faq-answer">
+        <p>No, los contenidos de las cajas son aleatorios. Si tenés miedo de que te toquen ítems repetidos, podés encontrar la sección de “GeekSwap” para intercambiarlos.</p>
+      </div>
+    </div>
+
+    <!-- Pregunta 3 -->
+    <div class="faq-item">
+      <button class="faq-question">¿Qué pasa si ya tengo un item repetido?</button>
+      <div class="faq-answer">
+        <p>Para eso existe la comunidad GeekSwap, a la que podrás acceder cuando te suscribas. En ella vas a poder intercambiar ítems con otros usuarios.</p>
+      </div>
+    </div>
+
+    <!-- Pregunta 4 -->
+    <div class="faq-item">
+      <button class="faq-question">¿Hacen envíos internacionales?</button>
+      <div class="faq-answer">
+        <p>Sí. Solo tené en cuenta que, dependiendo de dónde vivas, puede tardar un poco más en llegarte el paquete.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACTO -->
+<section id="contacto" class="contact-section">
+  <h2>Contacto</h2>
+  <p class="subtitulo">Envía un mensaje directamente desde la web.</p>
+
+  <div class="contact-wrapper">
+    <!-- Formulario -->
+    <form class="contact-form">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu email" required>
+      <textarea rows="4" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+
+    <!-- Imagen -->
+    <div class="contact-image">
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Columna 1 -->
+      <div class="footer-column">
+        <img src="img/logofrikicaja.png" alt="Logo" class="logo-footer">
+        <h5>Seguinos</h5>
+        <img src="img/iconosfooter.png" alt="Iconos redes sociales" class="redes-footer">
+        <p class="copyright">© 2025 Política de privacidad</p>
+      </div>
+  
+      <!-- Columna 2 -->
+      <div class="footer-column">
+        <h5>Navegación</h5>
+      <ul class="nav-footer">
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="#ediciones">Ediciones</a></li>
+        <li><a href="#instrucciones">Instrucciones</a></li>
+        <li><a href="#suscripciones">Suscripciones</a></li>
+        <li><a href="#geekswap">GeekSwap</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#Q&A">Q&A</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      </div>
+  
+      <!-- Columna 3 -->
+      <div class="footer-column">
+        <h5>Newsletter</h5>
+        <p>Recibí noticias pixeladas, lanzamientos y ofertas exclusivas.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Correo..." required>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- /FOOTER -->
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+<script>
+  // Asegurate que este código se ejecuta después de que el DOM esté cargado
+  document.addEventListener('DOMContentLoaded', function () {
+    const questions = document.querySelectorAll('.faq-question');
+
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        const isActive = q.classList.contains('active');
+
+        // Cierra todos
+        questions.forEach(btn => {
+          btn.classList.remove('active');
+          btn.nextElementSibling.style.display = 'none';
+        });
+
+        // Abre el actual si no estaba activo
+        if (!isActive) {
+          q.classList.add('active');
+          answer.style.display = 'block';
+        }
+      });
+    });
+
+    // Hamburger toggle (fuera del forEach!)
+    const toggle = document.getElementById('hamburger-toggle');
+    const dropdown = document.getElementById('dropdown');
+    if (toggle && dropdown) {
+      toggle.addEventListener('click', () => {
+        dropdown.classList.toggle('open');
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
