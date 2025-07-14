@@ -21,50 +21,62 @@
 <body>
 
 <!-- NAVBAR: Menú de navegación fijo superior -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <!-- Logo o nombre del sitio -->
-    <a class="navbar-brand" href="#">
-        <img src="img/logo-frikicaja.jpg" alt="Frikicaja" style="height: 40px;">
-    </a>    <!-- Botón para mostrar menú en mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Ítems del menú -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#instrucciones">Instrucciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#suscripciones">Suscripciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#geekswap">GeekSwap</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html3Q&A">Q&A</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+<header class="navbar">
+  <div class="navbar-container">
+    <img src="img/logofrikicaja.png" class="logo">
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="#instrucciones">Instrucciones</a></li>
+        <li><a href="#suscripciones">Suscripciones</a></li>
+        <li><a href="#Q&A">Q&A</a></li>
       </ul>
-    </div>
+    </nav>
   </div>
-</nav>
+  <!-- Esto lo movés fuera del contenedor -->
+  <button class="hamburger" id="hamburger-toggle">☰</button>
+  <nav class="dropdown-menu" id="dropdown">
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="#loot">Loot</a></li>
+        <li><a href="#instrucciones">Instrucciones</a></li>
+        <li><a href="#suscripciones">Suscripciones</a></li>
+        <li><a href="#geekswap">GeekSwap</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#Q&A">Q&A</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+</header>
 <!-- /NAVBAR -->
 
 <!-- HERO: Sección de portada con llamado a la acción -->
-<section class="section-spacing container d-flex align-items-center justify-content-between" style="min-height: 100vh; padding-top: 100px;">
-  <div class="row align-items-center">
-    <!-- Texto principal -->
-    <div class="col-lg-6">
+<section class="detalle-section">
+  <div class="detalle-container">
+    <!-- Texto -->
+    <div class="hero-text">
       <h1 class="h1-custom">Plan Legendario</h1>
-      <p class="p-custom">Figuras de colección, cómics de edición 
-especial, pines legendarios y más.
-¡Todo el multiverso en una caja!</p>
-      <div class="d-flex gap-3 mt-4">
-        <a href="#" class="btn btn-dark">Suscribirte</a>
-      </div>
+      <p class="p-custom">
+        Recibí figuras premium, objetos 
+épicos y artículos exclusivos <br> que 
+atraviesan el multiverso geek.
+      </p>
+      <a href="#suscripciones" class="detalle-btn">Suscribirte</a>
     </div>
-    <!-- Imagen destacada -->
-    <div class="col-lg-6 text-center">
-      <img src="img/hero-detalle.png" class="img-fluid img-rounded" alt="Imagen Hero">
+
+    <!-- Imagen -->
+    <div class="hero-img">
+      <img src="img/hero-detalle.png" alt="Imagen Hero">
     </div>
   </div>
 </section>
+
 <!-- /HERO -->
+
+<section class="imagen-corte">
+  <img src="img/logos.jpg" alt="logos marcas">
+</section>
+
 
 <!-- Items -->
 <section class="section-spacing container text-center">
@@ -135,58 +147,59 @@ especial, pines legendarios y más.
 </section>
 
 
-<section id="reseñas" class="reseñas-section container py-5">
-  <h2 class="text-center">Reseñas</h2>
-  <div class="row mt-5">
-    
-    <!-- Panel izquierdo -->
-    <div class="col-md-5">
-      <!-- Puntaje promedio -->
-      <div class="score-box p-4 mb-4">
-        <div class="score-display">
-          <img src="img/reseñas.jpg" alt="Reseñas">
+
+<section id="reseñas" class="reseñas-section">
+  <div class="reseñas-overlay">
+    <h2 class="text-center">Reseñas</h2>
+
+    <div class="reseñas-container">
+      <!-- Panel izquierdo -->
+      <div class="reseñas-left">
+        <div class="score-box">
+          <div class="score-display">
+            <img src="img/reseñas.jpg" alt="Reseñas">
+          </div>
         </div>
+
+        <!-- Formulario -->
+        <form class="review-form">
+          <label>Agregá una reseña</label>
+          <div class="stars">
+            <img src="img/star-empty.png" alt="★" class="star">
+            <img src="img/star-empty.png" alt="★" class="star">
+            <img src="img/star-empty.png" alt="★" class="star">
+            <img src="img/star-empty.png" alt="★" class="star">
+            <img src="img/star-empty.png" alt="★" class="star">
+          </div>
+          <input type="text" placeholder="nombre...">
+          <input type="email" placeholder="correo...">
+          <textarea rows="3" placeholder="escribí tu mensaje..."></textarea>
+          <button type="submit">Enviar</button>
+        </form>
       </div>
 
-      <!-- Formulario de reseña -->
-      <form class="review-form p-3">
-        <label class="fw-bold">Agregá una reseña</label>
-        <div class="stars mb-3">
-          <img src="img/star-empty.png" alt="★" class="star">
-          <img src="img/star-empty.png" alt="★" class="star">
-          <img src="img/star-empty.png" alt="★" class="star">
-          <img src="img/star-empty.png" alt="★" class="star">
-          <img src="img/star-empty.png" alt="★" class="star">
+      <!-- Panel derecho -->
+      <div class="reseñas-right">
+        <div class="review-box pixel-bubble">
+          <div class="review-stars">❤️❤️❤️❤️❤️</div>
+          <p>Realmente me encantó, ya voy 3 meses y por suerte no me salieron items repetidos</p>
         </div>
-        <input type="text" class="form-control mb-2" placeholder="nombre...">
-        <input type="email" class="form-control mb-2" placeholder="correo...">
-        <textarea class="form-control mb-2" rows="3" placeholder="escribe tu mensaje..."></textarea>
-        <button class="btn btn-light fw-bold">Enviar</button>
-      </form>
-    </div>
+        <div class="review-box pixel-bubble">
+          <div class="review-stars">❤️❤️❤️❤️❤️</div>
+          <p>Abrí 5 cajas y todas fueron diferentes. El contenido es impecable y siempre bien protegido.</p>
+        </div>
+        <div class="review-box pixel-bubble">
+          <div class="review-stars">❤️❤️❤️🤍🤍</div>
+          <p>Me tocó una figura exclusiva que no conseguía en ningún lado. Recomendadísimo para fans.</p>
+        </div>
+        <div class="review-box pixel-bubble">
+          <div class="review-stars">❤️❤️❤️❤️❤️</div>
+          <p>Ya soy fan y espero con ansias la edición del próximo mes.</p>
+        </div>
 
-    <!-- Panel derecho -->
-    <div class="col-md-7">
-      <div class="review-box pixel-bubble mb-4">
-        <div class="review-stars">❤️❤️❤️❤️❤️</div>
-        <p>Realmente me encantó, ya voy 3 meses y por suerte no me salieron items repetidos</p>
-      </div>
-      <div class="review-box pixel-bubble mb-4">
-        <div class="review-stars">❤️❤️❤️❤️❤️</div>
-        <p>Abrí 5 cajas y todas fueron diferentes. El contenido es impecable y siempre bien protegido.</p>
-      </div>
-      <div class="review-box pixel-bubble mb-4">
-        <div class="review-stars">❤️❤️❤️🤍🤍</div>
-        <p>Me tocó una figura exclusiva que no conseguía en ningún lado. Recomendadísimo para fans.</p>
-      </div>
-      <div class="review-box pixel-bubble mb-4">
-        <div class="review-stars">❤️❤️❤️❤️❤️</div>
-        <p>Me tocó una figura exclusiva que no conseguía en ningún lado. Recomendadísimo para fans.</p>
-      </div>
-
-      <!-- Navegación -->
-      <div class="d-flex justify-content-center align-items-center mt-4 gap-3">
-        <span>Página 1</span>
+        <div class="paginacion">
+          <span>Página 1</span>
+        </div>
       </div>
     </div>
   </div>
@@ -195,43 +208,104 @@ especial, pines legendarios y más.
 
 
 
-<footer class="footer bg-dark text-white py-5">
-  <div class="container">
-    <div class="row">
+
+<section id="suscripciones" class="suscripciones-seccion">
+  <div class="suscripciones">
+  <h2>Otras suscripciones</h2>
+  <p class="subtitulo">Elegí tu plan de batalla.<br>
+  Ya seas un explorador casual o un fan legendario, hay una Frikicaja esperando por vos.</p>
+
+  <div class="planes">
+    <!-- Plan Sidekick -->
+    <div class="plan-card">
+      <img src="img/suscripcionbarata.jpg" alt="Plan Sidekick" />
+      <h3>Plan Sidekick</h3>
+      <p class="precio">$49.000 <span>/ mes</span></p>
+      <p>Perfecto para empezar.<br><strong>Incluye:</strong></p>
+      <ul>
+        <li>✔ 1 figura sorpresa</li>
+        <li>✔ Pin o parche exclusivo</li>
+        <li>✔ 1 carta coleccionable</li>
+        <li>¡Y más!</li>
+      </ul>
+      <a href="plan.html" class="btn">Elegir plan</a>
+    </div>
+
+   <!-- Plan Sidekick -->
+    <div class="plan-card">
+      <img src="img/suscripcionmedia.jpg" alt="Plan Sidekick" />
+      <h3>Plan Heroe</h3>
+      <p class="precio">$55.000 <span>/ mes</span></p>
+      <p>Perfecto para empezar.<br><strong>Incluye:</strong></p>
+      <ul>
+        <li>✔ Figura de edición limitada</li>
+          <li>✔ Loot sorpresa</li>
+          <li>✔ Acceso a contenido exclusivo</li>
+          <li>¡Y más!</li>
+      </ul>
+      <a href="plan.html" class="btn">Elegir plan</a>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contact-section">
+  <h2>Contacto</h2>
+  <p class="subtitulo">Envía un mensaje directamente desde la web.</p>
+
+  <div class="contact-wrapper">
+    <!-- Formulario -->
+    <form class="contact-form">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu email" required>
+      <textarea rows="4" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+
+    <!-- Imagen -->
+    <div class="contact-image">
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
       <!-- Columna 1 -->
-      <div class="col-md-4 mb-4">
-        <img src="img/logo-frikicaja.jpg" alt="Logo" class="mb-3">
+      <div class="footer-column">
+        <img src="img/logofrikicaja.png" alt="Logo" class="logo-footer">
         <h5>Seguinos</h5>
-        <img src="img/iconosfooter.jpg" alt="Redes" class="img-fluid">
-        <p class="small mt-3">© 2025 Política de privacidad</p>
+        <img src="img/iconosfooter.png" alt="Iconos redes sociales" class="redes-footer">
+        <p class="copyright">© 2025 Política de privacidad</p>
       </div>
-
+  
       <!-- Columna 2 -->
-      <div class="col-md-4 mb-4">
+      <div class="footer-column">
         <h5>Navegación</h5>
-        <ul class="list-unstyled">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#instrucciones">Instrucciones</a></li>
-          <li><a href="#suscripciones">Suscripciones</a></li>
-          <li><a href="#geekswap">GeekSwap</a></li>
-          <li><a href="#Q&A">Q&A</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <!-- y así... -->
-        </ul>
+      <ul class="nav-footer">
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="#ediciones">Ediciones</a></li>
+        <li><a href="#instrucciones">Instrucciones</a></li>
+        <li><a href="#suscripciones">Suscripciones</a></li>
+        <li><a href="#geekswap">GeekSwap</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#Q&A">Q&A</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
       </div>
-
+  
       <!-- Columna 3 -->
-      <div class="col-md-4">
+      <div class="footer-column">
         <h5>Newsletter</h5>
-        <p>Recibí noticias pixeladas y más.</p>
-        <form class="d-flex">
-          <input type="email" class="form-control me-2" placeholder="Correo...">
-          <button type="submit" class="btn btn-primary">Enviar</button>
+        <p>Recibí noticias pixeladas, lanzamientos y ofertas exclusivas.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Correo..." required>
+          <button type="submit">Enviar</button>
         </form>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 <!-- Bootstrap Bundle JS (incluye Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
@@ -246,5 +320,12 @@ window.addEventListener('scroll', function() {
 
 <!-- Scripts adicionales -->
 <script src="scripts.js"></script>
+<script>
+    const toggle = document.getElementById('hamburger-toggle');
+    const dropdown = document.getElementById('dropdown');
+    toggle.addEventListener('click', () => {
+      dropdown.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
