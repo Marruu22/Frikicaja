@@ -340,6 +340,143 @@ header {
   color: white;
 }
 
+
+/* ================================
+   ITEMS
+================================= */
+
+.items-section {
+  padding: 60px 20px;
+  background-color: #000033; /* fondo rojo oscuro */
+  color: white;
+  text-align: center;
+}
+
+
+.titulo-items {
+  margin-top: 40px;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: 'Anton', sans-serif;
+}
+
+.subtitulo-items {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #ddd;
+}
+
+.items-contenedor {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.items {
+  background-color: #ffffff; /* violeta friki */
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.items img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.items h5 {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.items p {
+  font-family: 'Baloo 2', cursive;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: white;
+}
+
+.geek-items {
+   font-family: 'Anton Regular', regular; 
+   text-align: center;
+  font-size: 2rem;
+   margin-top: 40px;
+}
+
+
+.porque-bg {
+  background-color: #000033;
+  padding: 60px 30px;
+}
+
+.porque-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.porque-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.porque-title h2 {
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5rem;
+}
+
+.porque-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Texto */
+.porque-texto {
+  flex: 1 1 45%;
+  font-size: 1.1rem;
+  font-family: 'Baloo 2', cursive;
+}
+
+.porque-texto ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.porque-texto li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Imagen */
+.porque-img {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.porque-img img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .porque-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .porque-texto {
+    font-size: 1rem;
+  }
+}
+
 /* ================================
    INSTRUCCIONES
 ================================= */
@@ -1101,8 +1238,29 @@ img.rounded-circle {
 /* ============================== */
 /* RESEÑAS */
 /* ============================== */
+/* ===============================
+   RESEÑAS SECTION CON FONDO FULL WIDTH
+================================ */
+
+.reseñas-section {
+  background-color: #000033; /* o imagen de fondo */
+  padding: 80px 20px;
+  color: white;
+}
+
+.reseñas-overlay {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reseñas-section h2 {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
 .reseñas-container {
-  background-color: #000033;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1116,6 +1274,13 @@ img.rounded-circle {
   flex-grow: 1;
 }
 
+.score-box {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
 .score-display img {
   max-width: 100%;
   width: 100%;
@@ -1123,40 +1288,7 @@ img.rounded-circle {
   display: block;
 }
 
-
-/* Panel derecho: reseñas */
-.reseñas-right {
-  width: 100%;
-  max-width: 55%;
-  flex-grow: 1;
-}
-
-
-.reseñas-section {
-  padding: 60px 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  color: #fff;
-}
-
-.reseñas-section h2 {
-  text-align: center;
-  font-family: 'Anton', sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-
-.score-box {
-  background: #1a1a1a;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  text-align: center;
-}
-
 .review-form {
-  background: #1a1a1a;
   padding: 20px;
   border-radius: 12px;
   display: flex;
@@ -1197,10 +1329,15 @@ img.rounded-circle {
   background: #ddd;
 }
 
-/* Panel derecho */
+/* Panel derecho: reseñas */
+.reseñas-right {
+  width: 100%;
+  max-width: 55%;
+  flex-grow: 1;
+}
 
 .review-box {
-  background: #222;
+  background: #11001d;
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 20px;
@@ -1223,7 +1360,12 @@ img.rounded-circle {
   .reseñas-container {
     flex-direction: column;
   }
+  .reseñas-left,
+  .reseñas-right {
+    max-width: 100%;
+  }
 }
+
 
 
 
