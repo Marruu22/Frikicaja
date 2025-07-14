@@ -345,13 +345,19 @@ header {
    ITEMS
 ================================= */
 
+/* ===============================
+   ITEMS SECTION CON FONDO Y TARJETAS BLANCAS
+================================ */
+
 .items-section {
   padding: 60px 20px;
-  background-color: #000033; /* fondo rojo oscuro */
+  background-image: url('../img/fondoitems.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
 }
-
 
 .titulo-items {
   margin-top: 40px;
@@ -371,46 +377,59 @@ header {
   padding: 60px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 15px;
+  gap: 30px;
 }
 
-.items {
-  background-color: #ffffff; /* violeta friki */
-  padding: 10px;
+.itemss {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
+  color: #000;
 }
 
-.items img {
+.itemss img {
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 8px;
 }
 
-.items h5 {
+.itemss h5 {
   font-family: 'Anton', sans-serif;
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #000;
 }
 
-.items p {
+.itemss p {
   font-family: 'Baloo 2', cursive;
   font-size: 1rem;
   line-height: 1.4;
-  color: white;
+  color: #333;
 }
 
 .geek-items {
-   font-family: 'Anton Regular', regular; 
-   text-align: center;
+  font-family: 'Anton Regular', regular;
+  text-align: center;
   font-size: 2rem;
-   margin-top: 40px;
+  margin-top: 40px;
+  color: white;
 }
 
-
+/* ================================
+   POR QUÉ
+================================= */
 .porque-bg {
-  background-color: #000033;
-  padding: 60px 30px;
+  background-image: url('../img/fondoxq.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white;
+  font-family: 'Baloo 2', sans-serif;
 }
+
 
 .porque-section {
   max-width: 1200px;
@@ -445,7 +464,7 @@ header {
 }
 
 .porque-texto ul {
-  padding-left: 20px;
+  padding-left: 25px;
   list-style: none;
 }
 
@@ -1241,12 +1260,16 @@ img.rounded-circle {
 /* ===============================
    RESEÑAS SECTION CON FONDO FULL WIDTH
 ================================ */
-
 .reseñas-section {
-  background-color: #000033; /* o imagen de fondo */
-  padding: 80px 20px;
+  background-image: url('../img/fondoresenas.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
   color: white;
+  font-family: 'Baloo 2', sans-serif;
 }
+
 
 .reseñas-overlay {
   max-width: 1200px;
@@ -1277,7 +1300,6 @@ img.rounded-circle {
 .score-box {
   padding: 20px;
   margin-bottom: 30px;
-  border-radius: 12px;
   text-align: center;
 }
 
@@ -1290,7 +1312,6 @@ img.rounded-circle {
 
 .review-form {
   padding: 20px;
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -1311,7 +1332,6 @@ img.rounded-circle {
 .review-form textarea {
   padding: 10px;
   border: none;
-  border-radius: 8px;
   font-family: 'Baloo 2', cursive;
 }
 
@@ -1319,7 +1339,6 @@ img.rounded-circle {
   padding: 10px;
   background: #fff;
   border: none;
-  border-radius: 8px;
   font-weight: bold;
   font-family: 'Anton', sans-serif;
   cursor: pointer;
@@ -1339,7 +1358,6 @@ img.rounded-circle {
 .review-box {
   background: #11001d;
   padding: 20px;
-  border-radius: 12px;
   margin-bottom: 20px;
 }
 
