@@ -36,36 +36,44 @@ header {
   width: 100%;
   top: 0;
   z-index: 999;
-}
-.navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-
 
 .navbar-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .logo {
-  margin-right: auto; /* Esto empuja TODO lo demás a la derecha */
+  margin-right: auto;
+  max-height: 50px;
 }
 
 .main-nav {
   display: flex;
-  align-items: end;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style: none;
   margin: 0;
-  align-items: end;
+  align-items: center;
+  flex-wrap: nowrap;
 }
-
 
 .main-nav a {
   color: white;
@@ -85,6 +93,7 @@ header {
   padding: 4px 12px;
   border-radius: 8px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .dropdown-menu {
@@ -124,11 +133,12 @@ header {
   color: #c000fa;
 }
 
+
 /* 4. HERO */
 .hero-section {
   margin-top: 60px;
   background-image: url('../img/fondoheroo.jpg');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -612,9 +622,9 @@ header {
   margin-bottom: 10px;
 }
 
-.subtitulo {
+.subtitulo-faq {
   margin-bottom: 30px;
-  color: #ddd;
+  color: #ffffff;
   font-size: 1rem;
 }
 
